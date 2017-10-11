@@ -1,4 +1,4 @@
-package com.example.wishingnote.wddemo.fragment.ad;
+package com.example.wishingnote.wddemo.fragment.pager;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,18 +8,18 @@ import android.view.ViewGroup;
 
 import com.example.wishingnote.wddemo.R;
 
-public class FragementAD3 extends Fragment {
-    public FragementAD3() {
+public class FragementCol4 extends Fragment {
+    public FragementCol4() {
     }
-    public static FragementAD3 newInstance() {
-        FragementAD3 fragment = new FragementAD3();
+    public static FragementCol4 newInstance() {
+        FragementCol4 fragment = new FragementCol4();
         return fragment;
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_ad3, container, false);
+        return inflater.inflate(R.layout.fragment_col4, container, false);
     }
 
 }

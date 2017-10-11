@@ -19,12 +19,12 @@
                 android:layout_height="?attr/actionBarSize"
                 android:background="?attr/colorPrimary"
                 app:popupTheme="@style/AppTheme.PopupOverlay" />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerInParent="true"
-                android:text="검색"/>
+                android:background="@drawable/if_search"/>
         </RelativeLayout>
     </android.support.design.widget.AppBarLayout>
 

@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginTop="?attr/actionBarSize"
     tools:context="com.example.wishingnote.wddemo.fragment.menu.FragmentHome">
 
@@ -12,7 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <LinearLayout
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp">
                 <android.support.v4.view.ViewPager
@@ -21,6 +22,164 @@
                     android:layout_height="match_parent">
 
                 </android.support.v4.view.ViewPager>
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="bottom"/>
+            </FrameLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dadada"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:paddingLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="관심 위싱"/>
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scrollbars="horizontal"
+                    android:scrollbarSize="2dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="25dp"
+                        android:orientation="vertical"
+                        android:weightSum="9">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="4"
+                            android:layout_gravity="top"
+                            android:orientation="horizontal">
+                            <Button
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:text="뷰티"/>
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="0dp" />
+                            <Button
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:text="교육"/>
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="0dp" />
+                            <Button
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:text="운동"/>
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="0dp" />
+                            <Button
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:text="기부"/>
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="0dp" />
+                            <Button
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:text="리빙"/>
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="0dp" />
+                            <Button
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:text="건강"/>
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="0dp" />
+                            <Button
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:text="동물"/>
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="0dp" />
+                            <Button
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:text="다이어트"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="4"
+                            android:layout_gravity="top"
+                            android:orientation="horizontal">
+                            <Button
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:text="패션"/>
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="0dp" />
+                            <Button
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:text="푸드"/>
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="0dp" />
+                            <Button
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:text="여행"/>
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="0dp" />
+                            <Button
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:text="공연"/>
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="0dp" />
+                            <Button
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:text="연애"/>
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="0dp" />
+                            <Button
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:text="가족"/>
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="0dp" />
+                            <Button
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:text="종교"/>
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="0dp" />
+                            <Button
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:text="자게계발"/>
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
             </LinearLayout>
             <ImageView
                 android:layout_width="match_parent"
@@ -28,8 +187,40 @@
                 android:background="#dadada"/>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="150dp">
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="금주의 스타 위싱"/>
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="bottom"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="15dp"
+                        android:text="더보기>"
+                        android:textSize="12sp"/>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/maxresdefault"/>
+                </LinearLayout>
             </LinearLayout>
             <ImageView
                 android:layout_width="match_parent"
@@ -37,26 +228,150 @@
                 android:background="#dadada"/>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="150dp">
+                android:layout_height="150dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="오늘의 위싱 남녀"/>
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="bottom"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="15dp"
+                        android:text="더보기>"
+                        android:textSize="12sp"/>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="330">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="160"
+                        android:background="@drawable/ma"/>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"/>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="160"
+                        android:background="@drawable/seo"/>
+                </LinearLayout>
             </LinearLayout>
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#dadada"/>
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dadada"/>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="150dp">
+                android:layout_height="150dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="위싱 칼럼"/>
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="bottom"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="15dp"
+                        android:text="더보기>"
+                        android:textSize="12sp"/>
+                </RelativeLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/columnPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </android.support.v4.view.ViewPager>
+                    <me.relex.circleindicator.CircleIndicator
+                        android:id="@+id/columnIndicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        app:ci_drawable="@color/colorPrimaryDark"
+                        app:ci_drawable_unselected="@color/colorPrimary"
+                        android:layout_gravity="bottom"/>
+                </FrameLayout>
             </LinearLayout>
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#dadada"/>
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dadada"/>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="150dp">
+                android:layout_height="150dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="위싱 수호천사"/>
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="bottom"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="15dp"
+                        android:text="더보기>"
+                        android:textSize="12sp"/>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="330">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="160"
+                        android:background="@drawable/hana"/>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"/>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="160"
+                        android:background="@drawable/hotel"/>
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

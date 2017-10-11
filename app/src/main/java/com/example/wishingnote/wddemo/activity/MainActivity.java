@@ -18,7 +18,7 @@ import com.example.wishingnote.wddemo.fragment.menu.FragmentHome;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, BottomNavigationViewEx.OnNavigationItemSelectedListener{
-    private Fragment default_fragment = FragmentHome.newInstance(0);
+    private Fragment default_fragment = FragmentHome.newInstance();
     private BottomNavigationViewEx.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
